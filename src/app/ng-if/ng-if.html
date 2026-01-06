@@ -1,0 +1,34 @@
+<h1>Event Binding ( ) (HTML ➜ TS)</h1>
+<h2>Sirve para capturar eventos (click, input, submit, etc).</h2>
+
+<div style="margin-left: 10%;"> 
+    
+    <button (click)="toggle()">
+      {{ mostrar ? 'Ocultar' : 'Mostrar' }} mensaje
+    </button>
+
+    <p *ngIf="mostrar">
+      👋 Hola, este mensaje depende de ngIf
+    </p>
+
+</div>
+
+<div style="margin-left: 10%;"> 
+    
+    <!-- <p *ngIf="logueado; else noLogueado">
+        Bienvenido usuario
+    </p>
+
+    <ng-template #noLogueado>
+    <p>Por favor inicia sesión</p>
+    </ng-template> -->
+
+
+</div>
+
+<h2>Claves importantes</h2>
+<ul>
+    <li>Si la condición es false, <strong>el elemento NO existe en el DOM</strong></li>
+    <li>Angular ejecuta un método del TS</li>
+</ul>
+
