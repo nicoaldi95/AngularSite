@@ -1,0 +1,19 @@
+<h1>Two-Way Binding [( )] (HTML ↔ TS)</h1>
+<h2>Sirve para sincronizar datos en ambos sentidos (ideal para inputs y formularios).</h2>
+
+<div style="margin-left: 10%;"> 
+
+    <input [(ngModel)]="nombre" placeholder="Escribe tu nombre">
+    <p>Hola {{ nombre }}</p>
+
+</div>
+
+<h2>Qué pasa</h2>
+<ul>
+    <li>Escribes en el input</li>
+    <li>La variable se actualiza</li>
+    <li>La vista se actualiza automáticamente</li>
+</ul>
+
+<h2>Regla clave:</h2>
+<p>[(ngModel)] = property + event</p>

@@ -1,0 +1,19 @@
+<h1>Event Binding ( ) (HTML ➜ TS)</h1>
+<h2>Sirve para capturar eventos (click, input, submit, etc).</h2>
+
+<div style="margin-left: 10%;"> 
+    <p>Contador: {{ contador }}</p>
+
+    <button (click)="incrementar()">
+    Incrementar
+    </button>
+</div>
+
+<h2>Qué pasa</h2>
+<ul>
+    <li>El usuario hace click</li>
+    <li>Angular ejecuta un método del TS</li>
+</ul>
+
+<h2>Regla clave:</h2>
+<p>(evento)="metodo()"</p>
