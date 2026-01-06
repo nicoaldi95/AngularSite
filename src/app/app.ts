@@ -5,10 +5,11 @@ import { Interpolacion } from "./interpolacion/interpolacion";
 import { PropertyBinding } from "./property-binding/property-binding";
 import { EventBinding } from "./event-binding/event-binding";
 import { TwoWayBinding } from "./two-way-binding/two-way-binding";
+import { DataBindingEjercicioFinal } from "./data-binding-ejercicio-final/data-binding-ejercicio-final";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Interpolacion, PropertyBinding, EventBinding, TwoWayBinding, DataBinding],
+  imports: [RouterOutlet, Interpolacion, PropertyBinding, EventBinding, TwoWayBinding, DataBinding, DataBindingEjercicioFinal],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

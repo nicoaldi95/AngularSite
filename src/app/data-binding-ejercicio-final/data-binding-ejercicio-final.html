@@ -1,0 +1,23 @@
+<h1>Ejercicio Final (mezcla todo)</h1>
+<h2>Objetivo:</h2>
+<ul>
+    <li>Input para nombre</li>
+    <li>Botón que muestre un mensaje</li>
+    <li>Botón que se deshabilite</li>
+</ul>
+
+<div style="margin-left: 10%;"> 
+    
+    <input [(ngModel)]="nombre" placeholder="Tu nombre">
+
+    <button 
+    (click)="saludar()" 
+    [disabled]="!nombre">
+    Saludar
+    </button>
+
+    <p *ngIf="mostrar">
+    Hola {{ nombre }} 👋
+    </p>
+
+</div>
